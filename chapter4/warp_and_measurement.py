@@ -1,6 +1,6 @@
 from SimpleCV import Image
 
-img = Image('skew.png')
+img = Image('skew.jpg')
 
 # Warp the picture to straighten the paper
 corners = [(0,0), (480,0), (336,237), (147,237)]
