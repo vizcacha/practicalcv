@@ -20,3 +20,9 @@ paper = blobs[-1].crop()
 toyBlobs = paper.invert().findBlobs()
 
 toy = toyBlobs[-1].crop()
+
+# Use the toy block/paper ratio to compute the size
+paperSize = paper.width
+toySize = toy.width
+
+print float(toySize) / float(paperSize) * 8.5
