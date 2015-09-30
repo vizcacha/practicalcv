@@ -1,4 +1,4 @@
-from SimpleCV import Image, Color, Display
+from SimpleCV import Image, Color
 import time
 
 yellowTool = Image('yellowtool.png')
@@ -15,10 +15,5 @@ time.sleep(3)
 
 onlyYellow = yellowTool - yellowDistBin
 
-displayObject = Display()
-
-# Show the results
-onlyYellow.save(displayObject)
-
-while displayObject.isNotDone():
-    time.sleep(0.5)
+onlyYellow.show()
+time.sleep(3)
