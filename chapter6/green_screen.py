@@ -1,7 +1,7 @@
 from SimpleCV import Camera, Color, Display, Image
 
 cam = Camera()
-background = Image('weather.png')
+original_background = Image('weather.png')
 
 disp = Display()
 
@@ -15,7 +15,7 @@ while not disp.isDone():
     
     foreground = img - mask
 
-    background = background - mask.invert()
+    background = original_background - mask.invert()
 
     combined = background + foreground
 
