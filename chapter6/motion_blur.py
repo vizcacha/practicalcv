@@ -6,7 +6,7 @@ cam = Camera()
 
 lastImage = cam.getImage()
 
-display = Display((cam.getProperty('width'), cam.getProperty('height')))
+display = Display((int(cam.getProperty('width')), int(cam.getProperty('height'))))
 
 while not display.isDone():
     img = cam.getImage()
