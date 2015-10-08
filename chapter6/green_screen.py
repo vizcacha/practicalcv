@@ -15,7 +15,7 @@ while not disp.isDone():
     
     foreground = img - mask
 
-    background = background - mask
+    background = background - mask.invert()
 
     combined = background + foreground
 
