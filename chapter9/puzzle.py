@@ -1,4 +1,4 @@
-from SimpleCV import Image
+from SimpleCV import Image, Color
 img = Image("puzzle.jpg")
 blobs = img.binarize().findBlobs()
 blobs.image = img
